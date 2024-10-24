@@ -10,7 +10,7 @@ import streamlit as st
 import numpy as np  # Ensure numpy is imported
 
 # Load the model
-load_model = pickle.load(open('C:/Users/HP/Desktop/Internship/Internship.sav','rb'))
+load_model = pickle.load(open('Internship.sav','rb'))
 
 def loan_prediction(input_data):
     # Convert input data to numpy array and reshape
