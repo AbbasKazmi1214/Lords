@@ -5,12 +5,12 @@ Created on Thu Oct 24 10:18:55 2024
 @author: HP
 """
 
-import pickle
+import joblib
 import streamlit as st
 import numpy as np  # Ensure numpy is imported
 
 # Load the model
-load_model = pickle.load(open('Internship.sav','rb'))
+load_model = joblib.load('model.h5')
 
 def loan_prediction(input_data):
     # Convert input data to numpy array and reshape
